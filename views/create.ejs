@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Create a New Bird</h1>
+
+    <form method="POST" action="/birds/create">
+        <div class="form-group col-4">
+          <label>Species</label>
+          <input type="form-control" class="form-control" name="species" placeholder="Enter species">
+        </div>
+        <div class="form-group col-4">
+          <label>Nickname</label>
+          <input type="form-control" class="form-control" name="nickname" placeholder="Enter nickname">
+        </div>
+        <div class="form-group col-4">
+            <label>Status</label>
+            <input type="form-control" class="form-control" name="status" placeholder="Enter status">
+        </div>    
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </body>
+</html>
